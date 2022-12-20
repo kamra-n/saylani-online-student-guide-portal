@@ -21,7 +21,7 @@ export default function Navbar() {
             <button className="lg:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? <AiOutlineClose className="text-2xl" /> : <AiOutlineAlignLeft className="text-2xl" />}
             </button>
-            <ul className="top-[84px] left-0 flex flex-col items-center gap-12 h-screen text-[14px] text-[#000000d9] bg-green-50  absolute transition duration-150 ease-in w-full" style={{ display: isOpen ? 'flex' : 'none' }}>
+            <ul className="top-[80px] p-[2rem] left-0 flex flex-col items-center gap-12 h-screen text-[14px] text-[#000000d9] bg-green-50  absolute transition duration-150 ease-in w-full z-50 lg:hidden" style={{ display: isOpen ? 'flex' : 'none' }}>
                 <li className="hover:text-[#0d6db7] ease-in-out">Home</li>
                 <li className="hover:text-[#0d6db7] ease-in-out">About</li>
                 <li className="hover:text-[#0d6db7] ease-in-out">Contact</li>
