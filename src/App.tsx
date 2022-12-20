@@ -4,7 +4,7 @@ import './global.module.scss'
 function App() {
 
   return (
-    <section className='container w-full max-w-[1440px]'>
+    <section className='container w-full max-w-[1440px] mx-auto'>
       <Header/>
 
     </section>
