@@ -76,7 +76,7 @@ export default function HeroSection() {
 
     }
     return (
-        <div className=" w-full flex">
+        <div className="w-full flex h-[85vh]">
             <div className="w-1/2 lg:px-4 lg:pt-4 xl:pl-8 x:pr-4 xl:pt-20 relative hidden lg:block">
                 <h2 className="lg:text-[35px] leading-[50px] w-full lg:max-w-[510px] tracking-wide xl:text-[38px] ">Donate us to support<br />
                     <span className="text-[#8dc63f]">flood-affected</span><br />families in Pakistan</h2>

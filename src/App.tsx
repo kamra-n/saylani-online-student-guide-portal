@@ -8,7 +8,7 @@ function App() {
 
   return (
     <section className='container w-full max-w-[1440px] mx-auto'>
-      <Header />
+       <Header />
 
       <main className='md:p-0 lg:px-20'>
         <HeroSection />
