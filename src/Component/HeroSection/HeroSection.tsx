@@ -7,21 +7,34 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { sliderImageOne, sliderImageTwo, sliderImageThree } from '../../assets';
 
 export default function HeroSection() {
-    // const IMAGE_DATA : any = [{
-    //     id: 1,
-    //     img: sliderImageOne
+    const IMAGE_DATA : any = [{
+        id: 1,
+        img: sliderImageOne
 
-    // },
-    // {
-    //     id: 2,
-    //     img: sliderImageTwo
+    },
+    {
+        id: 2,
+        img: sliderImageTwo
 
-    // },
-    // {
-    //     id: 3,
-    //     img: sliderImageThree
+    },
+    {
+        id: 3,
+        img: sliderImageThree
 
-    // }]
+    }]
+
+    type MapData = {
+        id: number;
+        img: string;
+      };
+
+      const slidesDATA = IMAGE_DATA.map((v:MapData)=>{
+        return (<div key={v.id}>
+         <img src={v.img} alt="image" className="max-h-full max-w-full justify-items-stretch" />
+        </div>
+        )
+    })
+
     const sliderRef = useRef<any>(null)
     console.log(sliderRef.current)
     const settings = {
@@ -80,10 +93,7 @@ export default function HeroSection() {
             <div className=" w-full lg:w-1/2">
 
                 <Slider ref={sliderRef} {...settings}>
-                    <img src={sliderImageOne} alt="image" className="max-h-full max-w-full justify-items-stretch" />
-                    <img src={sliderImageTwo} alt="image" className="max-h-full max-w-full justify-items-stretch" />
-                    <img src={sliderImageThree} alt="image" className="max-h-full max-w-full justify-items-stretch" />
-
+                    {slidesDATA}
                 </Slider>
             </div>
 
