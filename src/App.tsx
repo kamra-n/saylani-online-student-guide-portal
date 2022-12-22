@@ -1,22 +1,24 @@
-import Header from './Component/Header/Header'
-import HeroSection from './Component/HeroSection/HeroSection'
+import Header from "./Component/Header/Header";
+import HeroSection from "./Component/HeroSection/HeroSection";
+import CourseSection from "./Component/Course-section/CourseSection";
 
-import './global.module.scss'
-
+import "./global.module.scss";
 
 function App() {
-
   return (
-    <section className='container w-full max-w-[1440px] mx-auto'>
-       <Header />
+    <>
+      <Header />
+    <section className="container w-full max-w-[1440px] mx-auto lg:px-20">
 
-      <main className='md:p-0 lg:px-20'>
+      <main>
         <HeroSection />
-      </main>
-      
-    </section>
 
-  )
+        <CourseSection />
+
+      </main>
+    </section>
+    </>
+  );
 }
 
-export default App
+export default App;
