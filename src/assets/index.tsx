@@ -6,6 +6,7 @@ import cardImageOne from "./Images/course-1.jpg";
 import cardImageTwo from "./Images/course-2.jpg";
 import cardImageThree from "./Images/course-3.jpg";
 import cardImageFour from "./Images/course-4.jpg";
+import bgPageHeader from './Images/bg-pages-header.avif'
 
 export {
   saylaniLogo,
@@ -16,4 +17,5 @@ export {
   cardImageTwo,
   cardImageThree,
   cardImageFour,
+  bgPageHeader
 };

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button, Modal, Card, Form, Input, Radio } from "antd";
+import { Link } from "react-router-dom";
+import { Button, Modal, Card} from "antd";
 
 import {
     cardImageOne,
@@ -154,7 +155,7 @@ export default function CourseSection() {
                                         View Details
                                     </button>
                                     <button className="border-none bg-[#8DC63F] text-white w-[140px] p-1 rounded-md flex-auto">
-                                        Enroll now
+                                       <Link to='/enroll'>Enroll now</Link> 
                                     </button>
                                 </div>
                             </div>
