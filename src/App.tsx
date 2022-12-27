@@ -7,6 +7,10 @@ import Media from "./Pages/Media/Media";
 import Certification from "./Pages/Certificaton/Certification";
 import Enroll from "./Pages/Enroll/Enroll";
 import Header from "./Component/Header/Header";
+import Protected from "./Protected";
+import Admin from "./Pages/Admin/Admin";
+import Login from "./Pages/Login/Login";
+import AddSlider from "./Pages/Admin/AddSlider";
 
 import "./global.module.scss";
 
@@ -22,8 +26,10 @@ function App() {
           <Route path="/media" element={<Media />} />
           <Route path="/certification" element={<Certification />} />
           <Route path="/enroll" element={<Enroll />} />
-
-
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Protected Cmp={Admin} />}>
+          <Route path="addslider" element={<AddSlider />} />
+          </Route>
         </Routes>
       </section>
     </>
