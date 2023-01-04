@@ -10,14 +10,15 @@ import Header from "./Component/Header/Header";
 import Protected from "./Protected";
 import Admin from "./Pages/Admin/Admin";
 import Login from "./Pages/Login/Login";
-import AddSlider from "./Pages/Admin/AddSlider";
+import AddSlider from './Pages/Admin/AddSlider';
+import ViewSlider from "./Pages/Admin/ViewSlider";
 
 import "./global.module.scss";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="container w-full max-w-[1440px] mx-auto lg:px-20">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,9 +28,9 @@ function App() {
           <Route path="/certification" element={<Certification />} />
           <Route path="/enroll" element={<Enroll />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<Protected Cmp={Admin} />}>
-          <Route path="addslider" element={<AddSlider />} />
-          </Route>
+          <Route path="/admin" element={<Admin/>}/>
+          <Route path='/add-slider' element={<AddSlider/>}/>
+          <Route path='/view-slider' element={<ViewSlider/>}/>
         </Routes>
       </section>
     </>
