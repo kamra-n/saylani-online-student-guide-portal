@@ -1,5 +1,3 @@
-import Sidebar from './Sidebar'
-import Topbar from './Topbar';
 import { Card, Button, Form, Input,Upload, UploadFile } from 'antd';
 
 export default function AddSlider() {
@@ -8,9 +6,7 @@ export default function AddSlider() {
   }
   return (
     <>
-     <Topbar title='Add Slider'/>
-    <div className="grid grid-cols-[300px,1fr] mt-2 h-[95vh] shadow-md">
-      <Sidebar />
+    <div className="w-full">
       <div className=" text-center h-100">
       <div className='mt-4 site-card-border-less-wrapper flex justify-center items-center'>
           <Card title="Add Slider" bordered={true} style={{ width: '500px', padding: '2rem', minWidth: '250px' }} className='bg-gray-50'>

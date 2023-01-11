@@ -7,6 +7,8 @@ import cardImageTwo from "./Images/course-2.jpg";
 import cardImageThree from "./Images/course-3.jpg";
 import cardImageFour from "./Images/course-4.jpg";
 import bgPageHeader from './Images/bg-pages-header.avif'
+import aboutBg from './Images/saylani-aout-bg.png';
+import aboutImg from './Images/saylani-about-us.png'
 
 export {
   saylaniLogo,
@@ -17,5 +19,7 @@ export {
   cardImageTwo,
   cardImageThree,
   cardImageFour,
-  bgPageHeader
+  bgPageHeader,
+  aboutBg,
+  aboutImg
 };

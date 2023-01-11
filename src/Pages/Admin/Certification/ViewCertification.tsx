@@ -1,13 +1,9 @@
-import Sidebar from './Sidebar'
-import Topbar from './Topbar'
 
-export default function ViewSlider() {
+export default function ViewCertification() {
   return (
     <>
-    <Topbar title='View Slider'/>
-    <div className="grid grid-cols-[300px,1fr] mt-2 h-[95vh] shadow-md">
-      <Sidebar />
-      <div className=" h-100">
+    <div className="w-full shadow-md">
+      <div className="h-100">
       <div className='mt-4 flex justify-center items-center'>
 
       <div className="bg-white  p-4 rounded-md w-4/5  mt-2  border-b-[10px] border-[blue-50] overflow-y-scroll">
@@ -17,10 +13,13 @@ export default function ViewSlider() {
     <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
       <tr>
         <th scope="col" className="py-3 px-6">
-          Slider Name
+          Student Name
         </th>
         <th scope="col" className="py-3 px-6">
-          Slider Path
+        Student Roll No 
+               </th>
+        <th scope="col" className="py-3 px-6">
+        Student Passing Year
         </th>
         <th scope="col" className="py-3 px-6">
           Action
@@ -32,6 +31,9 @@ export default function ViewSlider() {
             <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
             name
             </th>
+            <td className="py-4 px-6">
+              name
+            </td>
             <td className="py-4 px-6">
               name
             </td>

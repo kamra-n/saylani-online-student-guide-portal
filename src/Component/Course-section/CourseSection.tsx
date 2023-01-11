@@ -132,7 +132,7 @@ export default function CourseSection() {
                 <h2 className="text-2xl text-center lg:text-4xl lg:text-left font-semibold">
                     Courses we Offered
                 </h2>
-                <div className="bg-[#0d6db7] w-52 h-1 ml-12 lg:ml-6  mt-2 pl-10"></div>
+                <div className="bg-[#0d6db7] w-52 h-[2px] ml-12 lg:ml-6  mt-2 pl-10"></div>
             </div>
 
             <div className="course__cardMain mt-6 gap-6 flex flex-col  lg:flex lg:flex-row lg:justify-center items-center">

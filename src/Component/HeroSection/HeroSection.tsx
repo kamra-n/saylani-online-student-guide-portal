@@ -101,7 +101,7 @@ export default function HeroSection() {
 
         <div className="absolute flex bottom-0 right-[48px] xl:pb-9">
           <BsArrowLeft
-            className="lg:text-6xl xl:text-6xl cursor-pointer"
+            className="lg:text-7xl xl:text-8xl cursor-pointer"
             onClick={() => sliderRef.current.slickPrev()}
           />
           <BsArrowRight

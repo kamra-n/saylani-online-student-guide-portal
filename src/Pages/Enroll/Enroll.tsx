@@ -7,6 +7,7 @@ import QRCode from "react-qr-code";
 import { Card, Button, Form, Input, DatePicker, Select, Upload, UploadFile } from 'antd';
 import { UploadChangeParam } from 'antd/es/upload';
 import { bgPageHeader } from '../../assets'
+import Header from '../../Component/Header/Header';
 
 export default function Enroll() {
   const navigate = useNavigate()
@@ -36,7 +37,7 @@ export default function Enroll() {
   }
   const [course, setCourse] = useState<any>('');
 
-  const [isReadyToEnroll, setIsReadyToEnroll] = useState<boolean>(true);
+  const [isReadyToEnroll, setIsReadyToEnroll] = useState<boolean>(false);
 
 
   const handleSubmit = () => {
@@ -80,7 +81,7 @@ export default function Enroll() {
 
   return (
     <>
-
+      <Header />
       <div className='w-full max-h-64 p-24 mt-2 bg-no-repeat bg-cover flex justify-center items-center' style={{
         backgroundImage: `url(${bgPageHeader})`
       }}>
@@ -142,7 +143,7 @@ export default function Enroll() {
 
                   </Select>
                 </Form.Item>
-                <Button htmlType='submit'>Submit Form</Button>
+                <Button htmlType='submit' className='w-full p-2 flex justify-center items-center rounded-md'>Submit Form</Button>
               </Form.Item>
             </Form>
           </Card>

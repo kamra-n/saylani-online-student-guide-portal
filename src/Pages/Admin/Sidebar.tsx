@@ -2,98 +2,102 @@ import { Dropdown } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 export default function Sidebar() {
   return (
-    <div>
-          <ul className="p-8 flex flex-col justify-around h-full">
-            <Dropdown
-              label="Manage Slider"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-slider'>Add Slider</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='view-slider'>
-                  View Slider
-                </Link>
-              </Dropdown.Item>
-            </Dropdown>
+    <div className='flex justify-center items-center'>
+      <ul className="p-8 flex flex-col justify-around h-full">
+        <Dropdown
+          label="Slider"
+          dismissOnClick={true}
+        >
+          <Link to='add-slider'>
+            <Dropdown.Item>
+              Add Slider
+            </Dropdown.Item>
+          </Link>
+          <Link to='view-slider'>
+            <Dropdown.Item>
+              View Slider
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
 
-            <Dropdown
-              label="Manage News"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-news'>Add News</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='view-news'>View News</Link>
-              </Dropdown.Item>
-            </Dropdown>
+        <Dropdown
+          label="News"
+          dismissOnClick={true}
+        >
+          <Link to='add-news'>
+            <Dropdown.Item>
+              Add News
+            </Dropdown.Item>
+          </Link>
+          <Link to='view-news'>
+            <Dropdown.Item>
+              View News
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
 
-            <Dropdown
-              label="Manage Course"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-course'>Add Course</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='view-course'>View Course</Link>
-              </Dropdown.Item>
-            </Dropdown>
+        <Dropdown
+          label="Course"
+          dismissOnClick={true}
+        >
+          <Link to='add-course'>
+            <Dropdown.Item>
+              Add Course
+            </Dropdown.Item>
+          </Link>
+          <Link to='view-course'>
+            <Dropdown.Item>
+              View Course
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
 
-            <Dropdown
-              label="Manage Teacher"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-teacher'>
-                  Add Teacher
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='view-teacher'>
-                  View Teacher
-                </Link>
-              </Dropdown.Item>
-            </Dropdown>
-
-
-            <Dropdown
-              label="Manage Certification"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-certification'>
-                  Add Certification
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='manage-certification'>
-
-                  Manage Certification
-                </Link>
-              </Dropdown.Item>
-            </Dropdown>
+        <Dropdown
+          label="Teacher"
+          dismissOnClick={true}
+        >
+          <Link to='add-teacher'>
+            <Dropdown.Item>
+              Add Teacher
+            </Dropdown.Item>
+          </Link>
+          <Link to='view-teacher'>
+            <Dropdown.Item>
+              View Teacher
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
 
 
-            <Dropdown
-              label="Manage Registration"
-              dismissOnClick={false}
-            >
-              <Dropdown.Item>
-                <Link to='add-registration'>
-                  Add Registration
+        <Dropdown
+          label="Certification"
+          dismissOnClick={true}
+        >
+          <Link to='add-certification'>
+            <Dropdown.Item>
+              Add Certification
+            </Dropdown.Item>
+          </Link>
+          <Link to='view-certification'>
+            <Dropdown.Item>
 
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to='manage-registration'>
-                  Manage Registration
-                </Link>
-              </Dropdown.Item>
-            </Dropdown>
-          </ul>
-        </div>
+              Manage Certification
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
+
+
+        <Dropdown
+          label="Registration"
+          dismissOnClick={true}
+        >
+          <Link to='view-registration'>
+            <Dropdown.Item>
+              Manage Registration
+            </Dropdown.Item>
+          </Link>
+        </Dropdown>
+      </ul>
+    </div>
   )
 }
