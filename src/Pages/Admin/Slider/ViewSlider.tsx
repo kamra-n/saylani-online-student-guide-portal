@@ -2,7 +2,7 @@ export default function ViewSlider() {
   return (
     <>
     <div className="w-full shadow-md">
-      <div className=" h-100">
+      <div className="min-h-[100vh]">
       <div className='mt-4 flex justify-center items-center'>
 
       <div className="bg-white  p-4 rounded-md w-4/5  mt-2  border-b-[10px] border-[blue-50] overflow-y-scroll">

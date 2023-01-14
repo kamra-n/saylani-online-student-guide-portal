@@ -7,6 +7,7 @@ export default function Protected({ Cmp }: any) {
         if (!login) {
             navigate('/login')
         }
+       
     })
 
     return (
