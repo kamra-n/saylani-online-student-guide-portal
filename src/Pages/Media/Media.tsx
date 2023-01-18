@@ -116,7 +116,7 @@ export default function Media() {
 
 
   useEffect(() => {
-    axios.get('https://graph.facebook.com/v11.0/thiscoderisalive?fields=published_posts.limit(100){full_picture,message,created_time,permalink_url}&access_token=EAATVj1lCNtsBAHYXJcyIaiFTaRNMYCSmPZCF1EGxTqrpJdMtDvtdn9aFAOu6YomZALOvwWF0Ie0fk7g3Wf3E97vnHiU9bBBfYDxO3yByZBs6fPi17JfXETqGEpgyC2ZCdNMHKTO5RDDPjJeuVG3oxU5wPsqwXIiykZCHGLBNeVchIozPGV5it')
+    axios.get('https://graph.facebook.com/v11.0/thiscoderisalive?fields=published_posts.limit(100){full_picture,message,created_time,permalink_url}&access_token=EAATVj1lCNtsBADWkehwaktMX4CsODUQgpP3eRg2aaz1Uy1h4ke1vj7im9GQr0moUzjiFJwolijpVby6kZCMju0SfmtUDE3qARtfhaZAL65cvj2ZCEJYZA7hA9bGVdMs3gNyhMOkZAjxjJWpspqDTF4p3ZA0CgKwTj4ZAJ9oVxPTaxJtZBNZBdz9mc')
       .then(function (response) {
         // handle success
         if (response) {
@@ -171,16 +171,16 @@ export default function Media() {
 
       {displayPosts.length === 0 ? <div /> :
 
-      <ReactPaginate previousLabel={"Previous"}
-        nextLabel={"Next"}
-        pageCount={pageCount}
-        onPageChange={changePage}
-        containerClassName={`${style.paginationBttns}`}
-        previousLinkClassName={"previousBttn"}
-        nextLinkClassName={"nextBttn"}
-        disabledClassName={"paginationDisabled"}
-        activeClassName={"paginationActive"}
-      />
+        <ReactPaginate previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName={`${style.paginationBttns}`}
+          previousLinkClassName={"previousBttn"}
+          nextLinkClassName={"nextBttn"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={"paginationActive"}
+        />
 
       }
 

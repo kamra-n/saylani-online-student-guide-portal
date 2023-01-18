@@ -26,8 +26,7 @@ export default function Enroll() {
     }
   };
   const [phone, setPhone] = useState<string>('');
-  const [id, setID] = useState<string>("K" + Date.now());
-  console.log('id', id)
+  const [id] = useState<string>("K" + Date.now());
   const [degree, setDegree] = useState<string>('');
   const [cnic, setCnic] = useState<string>('');
   const [date, setDate] = useState<any>('')
